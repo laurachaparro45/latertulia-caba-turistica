@@ -1,0 +1,721 @@
+*{
+	
+    font-family:'Fira Sans Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+	background: #fff;
+	overflow: hidden;
+
+
+}
+
+
+:root{
+	--red:#993300;
+    --black:#252a34;
+    --blue :#cc9900;
+    --white:#eaeaea;
+
+} 
+
+
+
+*{
+
+	font-family:'Fira Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+/**whatsapp**/
+
+.appWhatsapp{
+	position: fixed;
+	right: 1px;
+	bottom: 180px;
+	width: 60px;
+	z-index: 1000;
+
+}
+
+.appWhatsapp img{
+	width: 100%;
+	height: auto;
+
+}
+
+/**go top **/
+
+.go-top{
+	position: fixed;
+	bottom: 100px;
+	right: -100%;
+	width: 50px;
+	height: 50px;
+	border: 2px solid var(--red);
+	background: ­­­­­#fff;
+	z-index: 999;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+
+
+
+
+}
+
+.go-top:hover{
+	border: 2px solid var(--white);
+	background:var(--red);
+}
+
+.go-top:hover span{
+	color: var(--white);
+}
+
+
+.go-top > span{
+	font-size: 30px;
+    color: var(--black);
+
+}
+
+
+
+
+
+
+
+
+/**menu de navegacion**/
+
+#header{
+	position: relative;
+	width: 100%
+}
+
+.menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: #fff;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 9999;
+}
+
+.menu .logo-box{
+	margin-left: 20px;
+
+
+}
+
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black);
+
+}
+
+.menu .list-container{
+	margin-right: 20px;
+
+}
+.menu .list-container .lists{
+	display: flex;
+}
+
+.menu .list-container .lists li{
+	list-style: none;
+}
+
+.menu .list-container .lists li a{
+	text-decoration: none;
+	margin: 0px 10px;
+	padding: 8px;
+	color: var(--black);
+	border-radius: 24px;
+	font-size: 16px;
+	transition: 0.3s;
+}
+
+.menu .list-container .lists li a.activo{
+	background: var(--red);
+	color: #fff;
+}
+
+.menu .list-container .lists li a:hover{
+	background: var(--red);
+	color: #fff;
+}
+
+
+.btn-menu > .fa-bars{
+	display: none;
+}
+
+/** menu de navegacion **/
+
+
+
+/** responsive **/
+
+@media only screen and (max-width:900px){
+	.btn-menu > .fa-bars{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.btn-menu > .fa-bars:hover{
+	color: var(--red);
+}
+.btn-menu > .fa-times{
+	color: var(--red);
+}
+
+ .menu .list-container{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+	height: calc(100%-60px);
+	background:#fff; 
+	
+} 
+
+.menu .list-container .lists{
+    width: 100%;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top: 5px solid var(--red);
+
+
+
+	
+}
+
+
+.menu .list-container .lists li{
+	width: 90%;
+	margin: 10px 0px;
+	border-bottom: 1px solid var(--red);
+	text-align: center;
+
+}
+
+.menu .list-container .lists li a{
+	font-size: 20px;
+	padding-bottom: 10px;
+
+}
+
+.menu .list-container .lists li a.activo{
+	background: none;
+	color: var(--red);
+}
+
+.menu .list-container .lists li a:hover{
+	background: none;
+	color: var(--red);
+}
+
+
+}
+
+
+a{
+	text-decoration: none;
+
+}
+
+
+/** banner **/
+
+.banner{
+	position:relative;
+	width:100%;
+	height:calc(100vh - 60px);
+	background-color:#f5f5f5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-in-out;
+	background-image: url(../img/la-tertulia-cabaña-turistica-iza-galeria-13.jpg);
+    animation: banner 22s infinite linear;
+}
+
+.banner-content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(83, 172, 83, .3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+
+
+}
+
+.banner-content h1{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
+	font-size: 40px;
+	text-align: center;
+}
+
+@keyframes banner{
+	0%{
+		background-image: url(../img/la-tertulia-cabaña-turistica-iza-galeria-13.jpg);
+	}
+
+	25%{
+
+		background-image: url(../img/la-tertulia-cabaña-turistica-iza-galeria-13.jpg);
+	}
+   
+
+   26%{
+		background-image: url(../img/la-tertulia-cabaña-turistica-iza-galeria-16.jpg);
+	}
+
+	50%{
+
+		background-image: url(../img/la-tertulia-cabaña-turistica-iza-galeria-16.jpg);
+	}
+
+
+   51%{
+		background-image: url(../img/banner-1.jpg);
+	}
+
+   75%{
+
+		background-image: url(../img/banner-1.jpg);
+	}
+
+	 76%{
+		background-image: url(../img/banner-2.jpg);
+	}
+
+   100%{
+
+		background-image: url(../img/banner-2.jpg);
+	}
+
+
+}
+
+/** banner**/
+
+
+.contact-info img{
+	width: 30%;
+	margin-left: 20px;
+	margin-top: 40px
+}
+
+
+.content1{
+	display: flex;
+
+}
+
+.img11 img{
+	width: 60%;
+	margin-top: 100px;
+	margin-left: 150px;
+
+}
+
+.contenedor{
+	width: 50%;
+	max-width: 1000px;
+	background: #fff;
+	padding: 40px;
+	margin: 20px auto;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+	margin-top: 50px;
+	margin-right: 90px;
+	margin-bottom: 80px;
+
+
+
+}
+
+.contenedor h1{
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 25px;
+	color:#cc9900;
+}
+
+.contenido{
+	display: flex;
+	width: 100%;
+    overflow: hidden;
+
+}
+
+/*FORMULARIO*/
+
+
+.alert{
+	display: block;
+	padding: 12px;
+	background: #f8d7da;
+	color: #721c24;
+	margin-bottom: 10px;
+	border:1px solid #f5c6cb;
+	
+}
+
+.formulario{
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+
+.formulario input[type = "text"],
+.formulario textarea{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 12px 20px;
+	border:1px solid #999;
+	color: #999;
+	font-weight: 400;
+    
+
+
+}
+
+.formulario input[type = "datetime-local"],
+.formulario textarea{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 12px 20px;
+	border:1px solid #999;
+	color: #999;
+	font-weight: 400;
+    
+
+
+}
+
+
+
+
+.formulario select{
+    width: 100%;
+	margin-bottom: 15px;
+	padding: 12px 20px;
+	border:1px solid #999;
+	color: #999;
+	font-weight: 400;
+}
+
+
+
+
+.formulario textarea{
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 150px;
+	max-height: 200px;
+
+}
+
+.formulario input[type = "text"]:focus,
+.formulario textarea:focus{
+    border:1px solid #cc9900 ;
+}
+
+
+
+.formulario button{
+	padding: 12px 30px;
+	border: transparent;
+	background: #cc9900 ;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+}
+
+
+
+/** FOOTER **/
+
+footer{
+	background:#cc9900 ;
+	border: 1px solid #000; 
+}
+
+.footer-content{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	padding-left: 75px;
+	padding-right:70px;
+
+}
+.contact-us{
+	width: 40%;
+	color:#fff;
+
+
+}
+
+.brand{
+	font-weight: 500;
+	font-size: 40px;
+
+}
+
+.brand+p{
+	font-weight: 500;
+
+	
+}
+
+.social-media{
+	width: 50%;
+	display: flex;
+	justify-content:flex-end;
+}
+
+.social-media-icon{
+    display:inline-block;
+    margin-left:20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+
+
+}
+
+.social-media-icon:hover{
+	background: #fff;
+    color: var(--red);
+}
+
+.social-media-icon i{
+	font-size: 30px;
+	line-height: 60px;
+}
+
+.line{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 60px;
+}
+
+/**footer**/
+
+
+@media only screen and (max-width:900px){
+	.btn-menu > .fa-bars{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.btn-menu > .fa-bars:hover{
+	color: var(--red);
+}
+.btn-menu > .fa-times{
+	color: var(--red);
+}
+
+ .menu .list-container{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+	height: calc(100%-60px);
+	background:#fff; 
+	
+} 
+
+.menu .list-container .lists{
+    width: 100%;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top: 5px solid var(--red);
+
+
+
+	
+}
+
+
+.menu .list-container .lists li{
+	width: 90%;
+	margin: 10px 0px;
+	border-bottom: 1px solid var(--red);
+	text-align: center;
+
+}
+
+.menu .list-container .lists li a{
+	font-size: 20px;
+	padding-bottom: 10px;
+
+}
+
+.menu .list-container .lists li a.activo{
+	background: none;
+	color: var(--red);
+}
+
+.menu .list-container .lists li a:hover{
+	background: none;
+	color: var(--red);
+}
+
+
+}
+
+@media only screen and (max-width: 773px){
+	/**banner**/
+
+  .banner .banner-content h1{
+  	font-size: 40px;
+  }
+ 
+  .banner .banner-content h2{
+  	font-size: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 590px){
+
+/**banner**/
+
+	.banner .banner-content h1{
+		font-size: 30px;
+	}
+
+	.banner .banner-content h2{
+		font-size: 17px;
+	}
+
+	
+ .footer-content{
+ 	justify-content: center;
+ }
+
+.social-media{
+	width: 80%;
+	justify-content: space-evenly;
+
+}
+
+.social-media-icon{
+	margin-left: 5px;
+}
+
+.social-media i{
+	margin-left: 0;
+}
+
+.contact-us{
+	text-align: center;
+	width: 80%;
+	margin-bottom: 40px;
+}
+
+}
+
+
+}
+
+@media only screen and (max-width: 360px){
+ 
+
+  .content1{
+  	padding: 40px 20px;
+
+
+  }
+
+  
+  .contenido .formulario{
+  	width: 100%;
+  	padding: 0px;
+
+
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 800px){
+ 
+
+  
+
+  
+  .contenido .formulario{
+  	width: 100%;
+  	padding: 0px;
+
+
+  }
+
+  .contenido .info{
+  	margin-bottom: 30px;
+
+  }
+
+
+
+
+  .img11{
+  	width: 45%;
+  }
+}
